@@ -1,0 +1,47 @@
+<!-- Создать минимум 5 блоков с одинаковым классом и стилизовать каждый из них при помощи псевдокласса:nth-child().  -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+        .item:nth-child(2) {
+            background-color: orange;
+            border-radius: 50%;
+        }
+        .item:nth-child(3) {
+            background-color: yellow;
+        }
+        .item:nth-child(4) {
+            background-color: forestgreen;
+            border-radius: 10%;
+        }
+        .item:nth-child(5) {
+            background-color: blue;
+        }
+        .item:nth-child(6) {
+            background-color: darkblue;
+        }
+        .item:nth-child(7) {
+            background-color: #610088;
+        }
+    </style>
+</head>
+<body>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+</body>
+</html>

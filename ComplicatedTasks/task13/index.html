@@ -1,0 +1,45 @@
+<!-- С помощью псевдоэлементов и ключевых кадров создать анимацию заполнения цветом слова "Loading…" -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .loading {
+            position: relative;
+            font-size: 5rem;
+            width: 330px;
+        }
+
+        .loading::before {
+            content: "Loading...";
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #ff0000;
+            overflow: hidden;
+            animation: loading linear 2s infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="loading">
+    Loading...
+</div>
+
+
+</body>
+</html>
